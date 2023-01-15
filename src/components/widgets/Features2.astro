@@ -1,41 +1,38 @@
 ---
 import { Icon } from 'astro-icon';
+import { SITE } from '~/config.mjs';
 
 const items = [
 	{
-		title: 'Headers',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+		title: 'Configurable, easy-to-use tools',
+		description: `${SITE.name} is easy to use and configure to meet your unique operational needs.`,
 		icon: 'flat-color-icons:home',
 	},
 	{
-		title: 'Footers',
+		title: 'Safe, enterprise-grade platform',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+			'Our cloud-based SaaS solution is certified to meet the highest standards of security and reliability.',
 		icon: 'flat-color-icons:faq',
 	},
 	{
-		title: 'Features',
+		title: 'Robust data and deeper insights',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+			'Take advantage of industry benchmarking and enterprise-level reporting to bring new insights to your decision-making.',
 		icon: 'flat-color-icons:video-projector',
 	},
 	{
-		title: 'Call-to-Action',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+		title: 'Continuous innovation',
+		description: 'Client feedback is used to continuously improve and optimize our software solutions.',
 		icon: 'flat-color-icons:video-projector',
 	},
 	{
-		title: 'Pricing',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+		title: 'Increased ROI',
+		description: 'Streamline processes, reduce costs and extend the life of assets and equipment in your organization.',
 		icon: 'flat-color-icons:calculator',
 	},
 	{
-		title: 'Testimonial',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+		title: 'Our legendary support',
+		description: 'We’re always here for you whenever you need us — contact us via phone, email or chat.',
 		icon: 'flat-color-icons:voice-presentation',
 	},
 ];
@@ -46,13 +43,9 @@ const items = [
 	<div class="relative max-w-6xl mx-auto px-4 sm:px-6">
 		<div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
 			<div class="mb-8 text-center">
-				<p class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase">Components</p>
-				<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
-					Most used widgets
+				<h2 class="text-4xl md:text-5xl leading-tighter tracking-tighter mb-4 font-heading">
+					What to expect when working with us?
 				</h2>
-				<p class="max-w-3xl mx-auto text-center text-xl text-gray-600 dark:text-slate-400">
-					Provides frequently used components for building websites using Tailwind CSS
-				</p>
 			</div>
 			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start my-12 dark:text-white">
 				{

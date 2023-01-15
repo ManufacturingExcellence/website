@@ -1,18 +1,20 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-	name: 'AstroWind',
+	name: 'Reliable.Assets',
 
 	origin: 'https://astrowind.vercel.app',
 	basePathname: '/',
 	trailingSlash: false,
 
-	title: 'AstroWind — Your website with Astro + Tailwind CSS',
-	description: '🚀 AstroWind is a free and ready to start template to make your website using Astro and Tailwind CSS.',
+	title: 'Reliable.Assets — Achieve operational excellence',
+	description: 'Reliable.Assets enables you to realize full asset value and achieve operational excellence',
 	defaultImage: defaultImage,
 
 	defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
+	signupUrl: 'https://localhost:5001/Identity/Account/Register',
+	loginUrl: 'https://localhost:5001/Identity/Account/Login',
 	googleAnalyticsId: false, // or "G-XXXXXXXXXX",
 	googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 

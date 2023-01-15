@@ -3,43 +3,39 @@ import { Icon } from 'astro-icon';
 import Logo from '~/components/common/Logo.astro';
 import ToggleTheme from '~/components/common/ToggleTheme.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
+import { SITE } from '~/config.mjs';
 
 import { getHomePermalink, getBlogPermalink, getPermalink } from '~/utils/permalinks';
 
 const links = [
 	{
-		text: 'Pages',
+		text: 'Solutions',
 		links: [
-			{
-				text: 'Services',
-				href: "#",
-			},
-			{
-				text: 'About us',
-				href: "#",
-			},
-			{
-				text: 'Contact',
-				href: "#",
-			},
-			{
-				text: 'Terms',
-				href: getPermalink('/terms'),
-			},
-			{
-				text: 'Privacy policy',
-				href: getPermalink('/privacy'),
-			},
+			{ text: 'Manufacturing', href: '#' },
+			{ text: 'Fleet management', href: '#' },
+			{ text: 'Facility management', href: '#' },
+			{ text: 'Automotive', href: getPermalink('/terms') },
+			{ text: 'Government', href: getPermalink('/privacy') },
+			{ text: 'Healthcare', href: getPermalink('/privacy') },
 		],
 	},
 	{
-		text: 'Resources',
-		href: getPermalink('useful-resources-to-create-websites', 'post'),
+		text: 'Product',
+		links: [
+			{ text: 'Features', href: '#' },
+			{ text: 'FAQ', href: '#' },
+		],
 	},
 	{
-		text: 'Blog',
-		href: getBlogPermalink(),
+		text: 'Company',
+		links: [
+			{ text: 'About us', href: '#' },
+			{ text: 'Contact', href: '#' },
+			{ text: 'Terms', href: getPermalink('/terms') },
+			{ text: 'Privacy policy', href: getPermalink('/privacy') },
+		],
 	},
+	{ text: 'Blog', href: getBlogPermalink() },
 ];
 ---
 
@@ -100,18 +96,12 @@ const links = [
 			</ul>
 			<div class="md:self-center flex items-center md:mb-0 ml-4">
 				<div class="hidden items-center md:flex">
-					<ToggleTheme iconClass="w-5 h-5" />
-					<a
-						class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-						aria-label="RSS Feed"
-						href={getPermalink('/rss.xml')}
-					>
-						<Icon name="tabler:rss" class="w-5 h-5" />
+					<a class="btn w-full ml-3 py-2.5 px-5 font-semibold text-gray-600 shadow-none text-sm" href={SITE.signupUrl}>
+						Signup
 					</a>
-					<a
-						class="btn w-full ml-3 py-2.5 px-5 font-semibold text-gray-600 shadow-none text-sm"
-						href="https://github.com/onwidget/astrowind">Download</a
-					>
+					<a class="w-full ml-3 py-2.5 px-5 font-semibold text-gray-600 shadow-none text-sm" href={SITE.loginUrl}>
+						Login
+					</a>
 				</div>
 			</div>
 		</nav>

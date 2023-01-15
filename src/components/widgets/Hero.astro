@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon';
 import { Picture } from '@astrojs/image/components';
+import { SITE } from '~/config.mjs';
 ---
 
 <section>
@@ -8,19 +9,16 @@ import { Picture } from '@astrojs/image/components';
 		<div class="py-12 md:py-20">
 			<div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
 				<h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading">
-					Your website with
-					<span>Astro</span> +
-					<span class="sm:whitespace-nowrap">Tailwind CSS</span>
+					Start your asset reliability journey today
 				</h1>
 				<div class="max-w-3xl mx-auto">
 					<p class="text-xl text-gray-600 mb-8 dark:text-slate-400">
-						<span class="font-semibold underline decoration-wavy decoration-1 decoration-primary-600 underline-offset-2"
-							>AstroWind</span
-						> is a production ready template to start your new website using <em>Astro</em> + <em>Tailwind CSS</em>. It
-						has been designed following Best Practices, SEO, Accessibility, <span class="inline sm:hidden">...</span
-						><span class="hidden sm:inline"
-							>Dark Mode, Great Page Speed, image optimization, sitemap generation and more.</span
-						>
+						<span class="font-semibold underline decoration-1 decoration-primary-600 underline-offset-2">
+							{SITE.name}
+						</span> is a single platform to intelligently manage and monitor assets, predict maintenance and ensure reliability.
+						Realize your enterprise's asset value
+						<span class="inline sm:hidden">...</span>
+						<span class="hidden sm:inline">and achieve operational excellence.</span>
 					</p>
 					<div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
 						<div class="flex w-full sm:w-auto">
@@ -30,7 +28,7 @@ import { Picture } from '@astrojs/image/components';
 								target="_blank"
 								rel="noopener"
 							>
-								<Icon name="tabler:download" class="w-5 h-5 mr-1 -ml-1.5" /> Get template
+								<Icon name="tabler:download" class="w-5 h-5 mr-1 -ml-1.5" /> Signup
 							</a>
 						</div>
 						<div class="flex w-full sm:w-auto">
@@ -42,15 +40,13 @@ import { Picture } from '@astrojs/image/components';
 			<div>
 				<div class="relative m-auto max-w-4xl">
 					<Picture
-						src={import('~/assets/images/hero.jpg')}
+						src={import('~/assets/images/hero2.jpg')}
 						class="mx-auto rounded-md w-full"
 						widths={[400, 768, 1480]}
 						sizes="(max-width: 767px) 400px, (max-width: 1479px) 768px, 1480px"
 						alt="Hero Image"
-						aspectRatio={1480 / 833}
 						loading="eager"
 						width={1480}
-						height={833}
 					/>
 				</div>
 			</div>
