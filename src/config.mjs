@@ -6,7 +6,6 @@ const CONFIG = {
 	origin: 'https://manufacturingexcellence.github.io/website',
 	basePathname: '/website',
 	trailingSlash: false,
-
 	title: 'Reliable.Assets — Achieve operational excellence',
 	description: 'Reliable.Assets enables you to realize full asset value and achieve operational excellence',
 	defaultImage: defaultImage,
