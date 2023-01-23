@@ -3,8 +3,8 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
 	name: 'Reliable.Assets',
 
-	origin: 'https://astrowind.vercel.app',
-	basePathname: '/',
+	origin: 'https://manufacturingexcellence.github.io/website',
+	basePathname: '/website',
 	trailingSlash: false,
 
 	title: 'Reliable.Assets — Achieve operational excellence',
