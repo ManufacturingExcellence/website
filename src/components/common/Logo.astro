@@ -1,7 +1,18 @@
 ---
+import { Picture } from '@astrojs/image/components';
 import { SITE } from '~/config.mjs';
 ---
 
 <span class="self-center ml-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
+	<Picture
+	class="float-left mr-2"
+	src={import('~/assets/images/logo.png')}
+	widths={[400, 768, 1480]}
+	sizes="32px"
+	alt="logo"
+	loading="eager"
+	width={32}
+/>
+
 	{SITE.name}
 </span>
