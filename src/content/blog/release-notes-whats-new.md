@@ -2,7 +2,7 @@
 publishDate: 'Jan 14, 2023'
 title: 'Release notes: Whats new'
 description: 'Stay uptodate with new features.'
-image: '~/assets/images/tools.jpg'
+image: '~/assets/tools.jpg'
 tags: [release-notes]
 ---
 
