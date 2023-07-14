@@ -3,8 +3,8 @@ import defaultImage from './assets/default.png';
 const CONFIG = {
 	name: 'Reliable.Assets',
 
-	origin: 'https://manufacturingexcellence.github.io/website',
-	basePathname: '/website',
+	origin: 'https://manufacturingexcellence.github.io',
+	basePathname: '/website/',
 	trailingSlash: false,
 	title: 'Reliable.Assets — Achieve operational excellence',
 	description: 'Reliable.Assets enables you to realize full asset value and achieve operational excellence',
